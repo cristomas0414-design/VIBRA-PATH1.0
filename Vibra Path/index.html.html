@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibra-Path | Seguridad Urbana Inteligente</title>
+    <style>
+        :root { --naranja-claro: #eec192; --oscuro: #1a1a1a; --gris-claro: #f4f4f4; --blanco: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; color: #333; text-align: center; }
+
+        /* Clases de fondo */
+        .bg-oscuro { background: var(--oscuro); color: white; }
+        .bg-blanco { background: var(--blanco); color: #333; }
+        .bg-gris { background: var(--gris-claro); color: #333; }
+
+        /* Estructura responsiva */
+        header { padding: 4rem 1rem; }
+        section { padding: 60px 1rem; width: 100%; box-sizing: border-box; }
+        
+        .logo { width: 120px; border-radius: 50%; border: 3px solid var(--naranja-claro); margin-bottom: 10px; }
+        
+        /* Contenedores con Flexbox para adaptarse */
+        .flex-container { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 1200px; margin: auto; }
+        .flex-item { flex: 1; min-width: 300px; }
+        
+        .producto-img { width: 100%; max-width: 400px; border-radius: 10px; }
+        .btn-detalles { background: var(--naranja-claro); border: none; padding: 12px 25px; cursor: pointer; font-weight: bold; border-radius: 2px; }
+
+        video { width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        
+        .valores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: auto; }
+        
+        input, textarea { width: 90%; max-width: 500px; padding: 15px; border: 2px solid #ddd; border-radius: 10px; margin: 10px 0; }
+        
+        /* Ajuste para celular */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .flex-container { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-oscuro">
+    <img src="img/Logo Vibra-Path.webp" alt="Logo" class="logo">
+    <h1>VIBRA PATH</h1>
+    <p>Tecnología háptica para tu seguridad urbana</p>
+</header>
+
+<section id="producto" class="bg-blanco">
+    <div class="flex-container">
+        <img src="img/Maleta Vibra Path.webp" alt="Maleta" class="producto-img">
+        <div class="flex-item" style="text-align: left;">
+            <h2>VIBRA PATH VERS 1.0</h2>
+            <p>Diseñada para quienes buscan comodidad y estilo, esta maleta combina materiales resistentes con un diseño moderno.</p>
+            <h3 style="font-size: 1.5rem;">349.00 COP</h3>
+            <button class="btn-detalles">See details ></button>
+        </div>
+    </div>
+</section>
+
+<section class="bg-oscuro">
+    <div class="flex-container">
+        <div class="flex-item" style="text-align: left;">
+            <h2>Misión</h2>
+            <p>Transformar la seguridad urbana a través de tecnología háptica integrada en accesorios cotidianos, brindando navegación discreta y segura.</p>
+        </div>
+        <div class="flex-item" style="text-align: left;">
+            <h2>Visión</h2>
+            <p>Para el año 2028, ser la marca líder en Colombia en soluciones de seguridad personal, reduciendo los índices de exposición al riesgo en las ciudades.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gris">
+    <p style="max-width: 800px; margin: auto; font-style: italic;">"Nuestros productos son diseñados a partir de componentes de alta tecnología y materiales sostenibles, desde sistemas de sensores hápticos inteligentes hasta el diseño ergonómico de su estructura. Estos se integran de manera intuitiva para guiar tus pasos y facilitarán tu movilidad".</p>
+</section>
+
+<section id="video" class="bg-blanco">
+    <h2>Conoce Vibra-Path en acción</h2>
+    <video controls>
+        <source src="media/presentacion.mp4.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section id="valores" class="bg-gris">
+    <h2>Valores Corporativos</h2>
+    <div class="valores-grid">
+        <div>💡<br>Innovación</div>
+        <div>🛡️<br>Seguridad</div>
+        <div>⚙️<br>Calidad</div>
+        <div>🔒<br>Discreción</div>
+    </div>
+</section>
+
+<section class="bg-oscuro">
+    <h2 style="color: var(--naranja-claro);">Servicios</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>💰 Métodos de pago</h3>
+            <p style="line-height: 2;">NEQUI<br>DAVIPLATA<br>Bancolombia<br>Transfiya<br>Contra entrega</p>
+        </div>
+        <div class="flex-item">
+            <h3>📍 Donde comprar</h3>
+            <p style="line-height: 2;">Página web oficial<br>Envíos a todo Colombia</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="bg-blanco">
+    <h2>Contacto</h2>
+    <form style="display: flex; flex-direction: column; align-items: center;">
+        <input type="text" placeholder="Tu Nombre" required>
+        <input type="email" placeholder="Tu Email" required>
+        <textarea placeholder="Tu mensaje..." rows="4"></textarea>
+        <button type="submit" class="btn-detalles" style="padding: 15px 30px;">Enviar Mensaje</button>
+    </form>
+</section>
+
+<footer class="bg-gris">
+    <p>&copy; 2026 Vibra-Path. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
